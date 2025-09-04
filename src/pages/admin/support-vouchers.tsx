@@ -19,6 +19,7 @@ import { CalendarIcon, PlusIcon, UsersIcon, BellIcon, CheckCircleIcon, XCircleIc
 import { format } from 'date-fns';
 import { ar } from 'date-fns/locale';
 import { useSettings } from "@/hooks/use-settings";
+import { PageWrapper } from "@/components/layout/page-wrapper";
 
 interface SupportVoucher {
   id: number;
@@ -526,6 +527,7 @@ export default function SupportVouchers() {
   }
 
   return (
+    <PageWrapper>
     <div className="min-h-screen bg-background">
       <div className="container mx-auto p-6 space-y-8">
         {/* Header Section */}
@@ -993,5 +995,6 @@ export default function SupportVouchers() {
         </Dialog>
       </div>
     </div>
+    </PageWrapper>
   );
 }

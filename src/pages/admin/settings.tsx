@@ -11,6 +11,7 @@ import { Loader2, Save, Upload, Database, RefreshCw, UploadCloud, DownloadCloud,
 import { Switch } from "../../components/ui/switch";
 import { useSettings } from "@/hooks/use-settings";
 import { useLocation } from "wouter";
+import { PageWrapper } from "@/components/layout/page-wrapper";
 
 interface Settings {
   siteName?: string;
@@ -380,6 +381,7 @@ const SettingsPage = () => {
   }
 
   return (
+    <PageWrapper>
     <div className="container mx-auto p-6 space-y-6">
       <div className="flex items-center justify-between">
         <div>
@@ -1025,6 +1027,7 @@ const SettingsPage = () => {
         </CardContent>
       </Card>
     </div>
+    </PageWrapper>
   );
 };
 

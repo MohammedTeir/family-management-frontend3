@@ -30,6 +30,7 @@ import {
 import { format } from 'date-fns';
 import { ar } from 'date-fns/locale';
 import { fetchApi } from "@/lib/api";
+import { PageWrapper } from "@/components/layout/page-wrapper";
 
 interface SupportVoucher {
   id: number;
@@ -520,6 +521,7 @@ export default function VoucherDetails() {
   const supportType = supportTypes.find(t => t.value === voucher.supportType);
 
   return (
+    <PageWrapper>
     <div className="min-h-screen bg-background">
       <div className="container mx-auto p-6 space-y-8">
         {/* Header */}
@@ -1155,5 +1157,6 @@ export default function VoucherDetails() {
         </Card>
       </div>
     </div>
+    </PageWrapper>
   );
 }
