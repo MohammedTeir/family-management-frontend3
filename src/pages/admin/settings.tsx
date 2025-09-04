@@ -699,8 +699,8 @@ const SettingsPage = () => {
                       <SelectValue placeholder="اختر نوع الخط" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="Amiri">أميري</SelectItem>
                       <SelectItem value="Cairo">القاهرة</SelectItem>
+                      <SelectItem value="Amiri">أميري</SelectItem>
                       <SelectItem value="Tajawal">تجوال</SelectItem>
                       <SelectItem value="Noto Sans Arabic">نوتو سانس عربي</SelectItem>
                     </SelectContent>
