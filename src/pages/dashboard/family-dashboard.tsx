@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useSettings } from "@/hooks/use-settings";
 import { useEffect } from "react";
 import { PageWrapper } from "@/components/layout/page-wrapper";
+import { Header } from "@/components/layout/header";
 
 export default function FamilyDashboard() {
   const { user, isLoading: authLoading } = useAuth();
