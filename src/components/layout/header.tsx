@@ -8,7 +8,7 @@ import { useSettings } from "@/hooks/use-settings";
 import { useEffect } from "react";
 
 
-export default function Header() {
+export function Header() {
   const { user, family, logoutMutation, dualRole, currentDashboard, chooseDashboard } = useAuth();
   const [, setLocation] = useLocation();
   const { settings } = useSettings();
@@ -206,3 +206,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
